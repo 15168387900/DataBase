@@ -40,7 +40,3 @@ mvn exec:java -D"exec.mainClass"="top.lipengfei.mydb.client.Launcher"
 ```
 
 会启动一个交互式命令行，就可以在这里输入类 SQL 语法，回车会发送语句到服务，并输出执行的结果。
-
-一个执行示例：
-
-![](https://s3.bmp.ovh/imgs/2021/11/2749906870276904.png)
