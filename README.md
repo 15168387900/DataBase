@@ -24,13 +24,13 @@ mvn compile
 接着执行以下命令以 D:/MyDb/TestDB/mydb 作为路径创建数据库：
 
 ```shell
-mvn exec:java -D"exec.mainClass"="top.lipengfei.mydb.backend.Launcher" -D"exec.args"="-create D:/MyDb/TestDB/mydb"
+mvn exec:java -D"exec.mainClass"="top.lipengfei.mydb.backend.Launcher" -D"exec.args"="-create D:/DataBase/TestDB/mydb"
 ```
 
 随后通过以下命令以默认参数启动数据库服务：
 
 ```shell
-mvn exec:java -D"exec.mainClass"="top.lipengfei.mydb.backend.Launcher" -D"exec.args"="-open D:/MyDb/TestDB/mydb"
+mvn exec:java -D"exec.mainClass"="top.lipengfei.mydb.backend.Launcher" -D"exec.args"="-open D:/DataBase/TestDB/mydb"
 ```
 
 这时数据库服务就已经启动在本机的 9999 端口。重新启动一个终端，执行以下命令启动客户端连接数据库：
