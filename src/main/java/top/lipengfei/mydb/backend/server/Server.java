@@ -32,7 +32,7 @@ public class Server {
             return;
         }
         System.out.println("Server listen to port: " + port);
-        ThreadPoolExecutor tpe = new ThreadPoolExecutor(10, 20, 1L, TimeUnit.SECONDS, new ArrayBlockingQueue<>(100), new ThreadPoolExecutor.CallerRunsPolicy());
+        ThreadPoolExecutor tpe = new ThreadPoolExecutor(16, 200, 60L, TimeUnit.SECONDS, new ArrayBlockingQueue<>(320), new ThreadPoolExecutor.CallerRunsPolicy());
         try {
             while(true) {
                 Socket socket = ss.accept();
